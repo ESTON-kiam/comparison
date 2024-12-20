@@ -1,0 +1,329 @@
+
+@media (max-width:600px) {
+
+  body{
+    flex-direction: column;
+  }
+}
+
+  body {
+      font-family: 'Montserrat', sans-serif; 
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      max-width: 1200px;
+      margin: 0 auto 20px;
+      gap: 20px;
+      width: 100%;
+  }
+
+   .vehicle-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      width: 250px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      display: none; 
+  }
+   .vehicle-card.active{
+     display: flex;
+  }
+   .vehicle-card > *{
+       position: relative;
+  }
+    .vehicleDiv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: -45px;
+  }
+
+  .vehicle-image {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+  }
+
+  .vehicle-title {
+      margin: 0 0 5px;
+      font-size: 1.2em;
+  }
+
+  .vehicle-price {
+      margin: 0 0 10px;
+      color: #555;
+  }
+
+  .request-quote-btn,
+    #toggle-all-accordions {
+      font-family: 'Montserrat', sans-serif; /* Montserrat for buttons */
+       color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  .request-quote-btn{
+      background-color: #e74c3c;
+   }
+
+  .request-quote-btn:hover{
+      background-color: #c0392b;
+   }
+   #toggle-all-accordions{
+      background-color: green;
+   }
+  #toggle-all-accordions:hover {
+      background-color: #c0392b;
+  }
+  #toggle-all-accordions.close-all {
+      background-color: red;
+  }
+  .add-vehicle-card{
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      width: 250px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+   .add-vehicle-card:not(.active-add-card) {
+       display: none;
+   }
+  .add-vehicle-plus {
+      font-size: 40px;
+      color: #777;
+      margin: 0;
+      cursor: pointer;
+      background-color: #f5f5f5;
+      padding: 30px;
+      border-radius: 0.5rem;
+  }
+
+  .add-vehicle-text{
+      color: #555;
+  }
+  .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-top: 10px;
+  }
+
+  .dropdown-btn {
+      font-family: 'Montserrat', sans-serif; 
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 10px 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .dropdown-arrow{
+      font-size: 1.2em;
+  }
+
+  .dropdown-content {
+      font-family: 'Montserrat', sans-serif; 
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 250px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+  }
+  .dropdown-content.category-view{
+      display: block;
+  }
+  .dropdown-content a {
+      display: block;
+      padding: 4px 15px;
+      text-decoration: none;
+      color: #333;
+      text-align: left;
+        font-size: 14px;
+  }
+
+  .dropdown-content a:hover {
+      background-color: #f0f0f0;
+  }
+    .dropdown-group{
+      padding: 5px 0;
+        display: none;
+  }
+   .dropdown-group.active{
+      display: block;
+   }
+   .dropdown-group-category {
+      padding: 7px 15px;
+      font-weight: bold;
+      cursor: pointer;
+      display: block;
+      text-align: left;
+       border-bottom: 1px solid #ccc;
+      position: relative;
+  }
+  .dropdown-group-category::after{
+        content: '\f054';
+       font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+         position: absolute;
+         right: 10px;
+         top: 50%;
+         transform: translateY(-50%);
+     }
+  p.dropdown-group-title {
+      color: #777;
+      font-weight: bold;
+      padding: 7.5px 15px;
+      text-align: left;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      margin: 0px;
+  }
+
+
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  .controls-row{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 15px;
+      max-width: 1200px;
+      width: 100%;
+  }
+  .controls-row > * {
+      margin-left: 15px;
+  }
+
+  .accordion {
+      width: 100%;
+      max-width: 1200px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .accordion-header {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      cursor: pointer;
+      justify-content: space-between;
+      background-color: black;
+      color: white;
+  }
+  .accordion-header.active {
+      border-bottom: 1px solid transparent;
+  }
+
+  .accordion-icon{
+      margin-right: 10px;
+      color: white;
+       font-size: 1.2em;
+  }
+  .accordion-header-text{
+      font-weight: bold;
+      font-size: 1.1em;
+  }
+
+  .accordion-content {
+      padding: 15px;
+      display: none;
+  }
+
+  .accordion-content.active {
+      display: block;
+  }
+
+  .specifications-row {
+      display: grid;
+      grid-template-columns: 4fr 2fr 2fr 1fr;
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+  }
+
+  .specifications-row:last-child{
+      border-bottom: none;
+  }
+
+  .specifications-label {
+      font-weight: bold;
+      color: #555;
+      padding-right: 10px;
+  }
+
+  .specifications-value {
+      color: #777;
+      width:250px;
+      padding-right:20px;
+      padding-left:20px;
+  }
+  .specifications-value.highlight-similar {
+       background-color: lightgreen;
+  }
+  .specifications-value.highlight-different {
+       background-color: lightcoral;
+  }
+  .accordion-arrow {
+      font-size: 1.2em;
+      transition: transform 0.3s ease;
+      color: white;
+  }
+  .accordion-arrow.rotate{
+      transform: rotate(180deg)
+  }
+  .remove-button {
+      font-family: 'Montserrat', sans-serif; 
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      font-size: 0.8em;
+      background-color: #ddd;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+  }
+  .remove-button:hover{
+      background-color: #ccc;
+  }
+  .vehicle-content{
+       display: none;
+  }
+  .vehicle-content.active {
+        display: block;
+   }
