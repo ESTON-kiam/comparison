@@ -1,4 +1,3 @@
-
     const vehicleData = {
       "mu-X 3.0L": {
         title: "M-UX 3.0L",
@@ -806,9 +805,7 @@
 
 
     };
-  
-    
-         const dropdownItems = {
+           const dropdownItems = {
          "SUVs":[
             {"name":"mu-X 3.0L", "vehicle": "mu-X 3.0L"},
               {"name":"mu-X 1.9L","vehicle":"mu-X 1.9L"}

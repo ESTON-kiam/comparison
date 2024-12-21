@@ -1,4 +1,3 @@
-
 @media (max-width:600px) {
 
   body{
@@ -73,7 +72,7 @@
 
   .request-quote-btn,
     #toggle-all-accordions {
-      font-family: 'Montserrat', sans-serif; /* Montserrat for buttons */
+      font-family: 'Montserrat', sans-serif; 
        color: white;
       border: none;
       padding: 10px 15px;
